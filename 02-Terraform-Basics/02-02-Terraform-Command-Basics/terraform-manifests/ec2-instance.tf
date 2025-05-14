@@ -11,11 +11,11 @@ terraform {
 # Provider Block
 provider "aws" {
   profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
-  region  = "us-east-1"
+  region  = "ap-south-1"
 }
 
 # Resource Block
-resource "aws_instance" "ec2demo" {
-  ami           = "ami-0be2609ba883822ec" # Amazon Linux in us-east-1, update as per your region
+resource "aws_instance" "Iac-sab-demo1" {
+  ami           = "ami-0af9569868786b23a" # Amazon Linux in us-east-1, update as per your region
   instance_type = "t2.micro"
 }
